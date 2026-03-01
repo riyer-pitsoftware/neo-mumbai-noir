@@ -1,0 +1,19 @@
+services:
+  noir-pipeline:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - .:/app
+      - noir-data:/app/data
+    env_file:
+      - .env
+    environment:
+      - OLLAMA_HOST=host.docker.internal:11434
+      - COMFYUI_HOST=host.docker.internal:8188
+      - FACEFUSION_HOST=host.docker.internal:7870
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  noir-data:

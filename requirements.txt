@@ -1,0 +1,8 @@
+requests
+python-dotenv
+websocket-client
+Pillow
+gradio
+opencv-python-headless
+onnxruntime
+numpy
