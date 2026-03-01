@@ -211,3 +211,7 @@ data/
 *.tmp
 .DS_Store
 Thumbs.db
+characters/*
+scenes/*
+claude-conv.txt
+outputs/*
